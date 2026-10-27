@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Project{% endblock %}
+{% block content %}  
+
+        <header class="project-header">
+            <h1>Project Saya</h1>
+            <p>Berikut adalah beberapa project yang telah saya buat:</p>
+        </header>
+        
+        <main class="project-gallery">
+            <div class="project-card">
+                <img src="{{ url_for('static', filename='images/Project.png') }}" alt="">
+                <div class="project-content">
+                <h2>Academic Student Tracker</h2>
+                <p>Aplikasi sederhana pencatat data nilai siswa, penghitung kelulusan dan rata-rata nilai siswa</p>
+                <button><a href="{{ url_for('student_tracker') }}">View Project</a></button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="{{ url_for('static', filename='images/Project.png') }}" alt="">
+                <div class="project-content">
+                <h2>Finance Tracker</h2>
+                <p>Aplikasi untuk mencatat keuangan, saldo, pendapatan dan pengeluaran</p>
+                <button><a href="{{ url_for('finance')}}">View Project</a></button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="{{ url_for('static', filename='images/project.png') }}" alt="">
+                <div class="project-content">
+                <h2>Online Posting App</h2>
+                <p>Aplikasi sederhana untuk mencatat dan mengelola aktivitas sehari-hari.</p>
+                <button><a href="{{ url_for('OnPo')}}">View Project</a></button>
+                </div>
+            </div>
+            
+        </main>
+{% endblock %}        

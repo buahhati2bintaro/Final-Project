@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+
+    <h1>Selamat datang di website saya</h1>
+    <img src="{{ url_for('static', filename='images/sakitenma-sticker-sakitenma.gif') }}" alt="selamat datang" width="200">
+    <h2>Tentang Website</h2>
+    <p>Website ini dibuat untuk memperkenalkan diri.</p>
+    <p>Silahkan klik pada link di atas untuk mengunjungi halaman lainnya.</p>
+{% endblock %}
